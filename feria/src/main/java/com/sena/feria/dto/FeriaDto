@@ -1,0 +1,38 @@
+package com.sena.crudbasic.dto;
+
+import java.util.List;
+
+import com.sena.crudbasic.model.Student;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.OneToMany;
+
+public class FeriaDto {
+
+	private int id;
+	private String name;
+
+	public int getId() {
+		return id;
+	}
+
+	public FeriaDto(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	
+}
